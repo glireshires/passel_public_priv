@@ -39,16 +39,16 @@ mode = 1
 # TODO 
 # sendall is set to 0 by default, change to 1 if you want
 # the bot to send all pinned messages to the pins channel
-sendall = 0
+sendall = 1
 
 # TODO 
 # replace the 0 with the pins channel ID for your sever
-pins_channel = 0
+pins_channel = 1001303796829409280
 
 # TODO
 # add any black listed channel IDs as a list separated by a comma (,)
 # a good idea is to add admin channels to this
-blacklisted_channels = []
+blacklisted_channels = [919130216981467186,919130214741725254,919130236157829121,919130582762520617,919871761951100929]
 
 # discord embed colors
 EMBED_COLORS = [
@@ -209,7 +209,7 @@ async def on_guild_channel_pins_update(channel, last_pin):
 
 
 # TODO Replace TOKEN with the token from discord developer portal 
-client.run('TOKEN')
+# client.run('TOKEN')
 
 # TODO If using GitHub diff deployment on HeroKu comment out the above line with '#' and remove '#' from the line below to uncomment it. 
-#client.run(os.environ.get('TOKEN'))
+client.run(os.environ.get('TOKEN'))
